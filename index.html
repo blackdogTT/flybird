@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        canvas {
+            display: block;
+            margin: 0 auto;
+            background-color: skyblue;
+        }
+    </style>
+</head>
+<body>
+<canvas id="canvas" width="1200" height="600" style="border: 1px solid #000"></canvas>
+</body>
+<script src="js/simple.js"></script>
+<script src="js/underscore-min.js"></script>
+<script src="js/Game.js"></script>
+<script src="js/frameUtil.js"></script>
+<script src="js/localURL.js"></script>
+<script src="js/background.js"></script>
+<script src="js/bird.js"></script>
+<script src="js/Pipe.js"></script>
+<script src="js/jquery-3.2.0.min.js"></script>
+<script src="js/underscore-min.js"></script>
+<script type="text/javascript">
+    var game = new Game({
+        url: 'r.json',
+        id: 'canvas'
+    });
+    game.canvas.width = window.innerWidth;
+    game.canvas.height = window.innerHeight;
+
+
+</script>
+</html>
